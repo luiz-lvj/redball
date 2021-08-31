@@ -1,0 +1,41 @@
+```jsx
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        background: #ccc;
+        margin: 0;
+      }
+
+      
+      .score{
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 10px;
+        padding-right: 10px;
+      }
+      .score h1{
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas
+      id="canvas"
+      onmousemove="onMouseMove(event)"
+      onclick="startGame()"
+    ></canvas>
+    <div class="score"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+```
